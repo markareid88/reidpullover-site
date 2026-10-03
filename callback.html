@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tesla sign-in received</title></head>
+<body style="font-family:system-ui;max-width:640px;margin:2em auto;padding:0 1em">
+<h1>Tesla sign-in received</h1>
+<p>Copy the full address below and paste it into <code>npm run login -- "..."</code> within a few minutes.</p>
+<textarea id="u" rows="5" style="width:100%" readonly></textarea>
+<p><button onclick="navigator.clipboard.writeText(document.getElementById('u').value)">Copy address</button></p>
+<script>document.getElementById('u').value=location.href;</script>
+</body></html>
